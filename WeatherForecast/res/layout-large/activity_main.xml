@@ -1,60 +1,58 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sky"
-    android:orientation="vertical" >
+    android:background="@drawable/sky" >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/search_bar"
-        android:orientation="horizontal"
-        android:weightSum="5" >
+        android:layout_height="match_parent"
+        android:background="#26000000"
+        android:orientation="vertical" >
 
-        <EditText
-            android:id="@+id/edtSearchLocation"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="10dp"
-            android:layout_weight="4"
-            android:background="@android:color/white"
-            android:ems="10"
-            android:hint="enter city eg.Pune"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textColor="@android:color/black" >
-        </EditText>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-            <Button
-                android:id="@+id/btnGetLocation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/icon_search" />
-        </RelativeLayout>
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" 
-        android:background="#26000000">
-
-        <GridView
-            android:id="@+id/gridDayWeathers"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:horizontalSpacing="5dp"
-            android:numColumns="2"
-            android:padding="5dp"
-            android:verticalSpacing="5dp" >
-        </GridView>
-    </RelativeLayout>
+            android:orientation="horizontal"
+            android:weightSum="5" >
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/edtSearchLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="4.3"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="Enter city eg.Pune"
+                android:imeOptions="actionSearch"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" >
+            </EditText>
+
+            <RelativeLayout
+                android:id="@+id/btnGetLocation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_search" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listDayWeathers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/white"
+            android:dividerHeight="0.7dp" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

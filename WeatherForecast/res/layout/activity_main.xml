@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="10dp"
-                android:layout_weight="4"
+                android:layout_weight="4.3"
                 android:background="@drawable/edit_text_style"
                 android:ems="10"
                 android:hint="Enter city eg.Pune"
@@ -36,7 +36,7 @@
                 android:id="@+id/btnGetLocation"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1" >
+                android:layout_weight="0.7" >
 
                 <ImageView
                     android:layout_width="wrap_content"
