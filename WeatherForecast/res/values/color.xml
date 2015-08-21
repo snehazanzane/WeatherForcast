@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="grid_bg_gray">#404040</color>
+    
+    <color name="grid_divider_gray">#404040</color>
+    
+    <color name="std_blue_color">#3092D1</color>
+    
+</resources>

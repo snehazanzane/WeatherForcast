@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather Forecast</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="weather_web_key">e7b46621da7a981fe7675327771afa6d</string>
+
+</resources>
